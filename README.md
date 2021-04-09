@@ -27,6 +27,7 @@ process can be done with any number of classes but we will be using one class fo
 
 The images themselves vary quite a bit in terms of viewing depth/angles and license plate types. We
 will be trying to detect USA license plates but our dataset includes plates from all over the world.
+
 <img src='https://github.com/particleman14/Transfer-Learning-Application/blob/main/Files/open%20images%20sample.PNG' width="520" height="280">
 
 Another big limitation of this dataset is its high variance in viewing angles, distances, cars and plate types.
