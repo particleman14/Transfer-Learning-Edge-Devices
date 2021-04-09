@@ -1,6 +1,6 @@
 # Transfer Learning for Edge Devices
  Create your own features using custom data and pre-trained models.  
- Utilizing google colab notebook we take an existing model and re-train to detect a custom object.  
+ Utilizing google colab notebook we take an existing model and re-train to detect our own custom object.  
  
  <img src='https://github.com/particleman14/Transfer-Learning-Application/blob/main/Files/Jetson%20Nano%20realtime1.gif' width="440" height="260"><img src='https://github.com/particleman14/Transfer-Learning-Application/blob/main/Files/450px-Nvidia-Jetson-Nano-2GB-Dev-Kit-1123x870.jpg' width="240" height="240">
  
@@ -24,6 +24,15 @@ process can be done with any number of classes but we will be using one class fo
 
  
  <img src='https://github.com/particleman14/Transfer-Learning-Application/blob/main/Files/TL%20image%20dl%20script.PNG' width="400" height="200"><img src='https://github.com/particleman14/Transfer-Learning-Application/blob/main/Files/TL%20openimage%20traintestsplit.PNG' width="120" height="240">
+Dataset Name: | Google Open Images dataset v6 (classes) 
+------------- | --------------------------------------
+Dataset Link :| [LINK](https://storage.googleapis.com/openimages/web/visualizer/index.html?set=valtest&type=segmentation&c=%2Fm%2F01jfm_)
+Dataset Size: |[3.18] GB
+Dimensions: | Width [1024, 480], Height [1024,575]
+'# of images: | 6859 [.JPEG]
+'# of classes: | 1. ('Vehicle registration plate')
+'# of images per class: | 6859 [(Train 5365) , (Test 1109) , (Validation 385)]
+Images file size: | [.035, 1.9] MB
 
 The images themselves vary quite a bit in terms of viewing depth/angles and license plate types. We
 will be trying to detect USA license plates but our dataset includes plates from all over the world.
@@ -33,6 +42,7 @@ will be trying to detect USA license plates but our dataset includes plates from
 Another big limitation of this dataset is its high variance in viewing angles, distances, cars and plate types.
 Unfortunately, many of the highly curated datasets related to this particular object class are
 proprietary and hard to find. 
+
 
 # Re-training existing model
 For this project we first re-trained on the Jetson Nano 2gb using the provided Jetson Utitlities script
@@ -56,7 +66,7 @@ folder has 1109 Images. Running our evaluation script, we achieve a mAP of .569.
 The next step is to convert this model and deploy it to our Jetson Nano.
  
  
- # Export and Deploy to Edge Device
+ # Export and Deploy to Edge Device'
  
  <img src='https://github.com/particleman14/Transfer-Learning-Application/blob/main/Files/TL%20onnx%20export.PNG' width="360" height="180">
  
