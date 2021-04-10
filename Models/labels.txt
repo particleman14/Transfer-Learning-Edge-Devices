@@ -1,1 +1,2 @@
-plate
+BACKGROUND
+Vehicle registration plate
